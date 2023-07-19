@@ -1,8 +1,9 @@
 html, body {
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-  }
+}
 
 .container{
     display: flex;
@@ -10,16 +11,26 @@ html, body {
     height: 100%;
 }
 
-.container .row{
-    border: 2px solid black;
-    height: 100%;
-    flex: auto;
-    
-}
-
 .container .column{
-    border: 2px solid black;
     height: 100%;
     flex: 1;
     display: flex;
 }
+
+.container .row{
+    border: 0.5px solid black;
+    height: 100%;
+    flex: auto;
+    transition: box-shadow 0.4s ease-in;
+}
+
+.container .row:hover{
+    box-shadow: 0 0 8px rgb(5, 63, 145);
+    transition: box-shadow 0.1s ease-out;
+}
+
+.buttons{
+    display: flex;
+}
+
+

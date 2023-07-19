@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container .row{
+    border: 2px solid black;
+    height: 100%;
+    flex: auto;
+    
+}
+
+.container .column{
+    border: 2px solid black;
+    height: 100%;
+    flex: 1;
+    display: flex;
+}

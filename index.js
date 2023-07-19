@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function() {
         
     })
     function rancolor(){document.querySelector('.color').addEventListener('click', () => {
+
         a = Math.floor(Math.random() * 255);
         b = Math.floor(Math.random() * 255);
-        c = Math.floor(Math.random() * 255);
-        div2.style.cssText = `background-color: rgb(${a},${b},${c})`
+        c = Math.floor(Math.random() * 255);        
     })}
     function green(){document.querySelector('.color1').addEventListener('click', () => {
         a = 31

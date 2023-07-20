@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     orange()
                     yellow()
                     black()
+                    any()
                 })
             }
             container.appendChild(div1)
@@ -87,12 +88,27 @@ document.addEventListener("DOMContentLoaded", function() {
         b = 37
         c = 37
     })}
-
+    function any(){document.querySelector('.any').addEventListener('click', () => {
+        const input = document.querySelector('.myInput').value
+        const arr = input.split(',')
+        a = arr[0]
+        b = arr[1]
+        c = arr[2]
+    })}
+    const lbutton = document.querySelector('.any')
+    lbutton.addEventListener('mouseover',()=>{
+        const input = document.querySelector('.myInput').value
+        const arr = input.split(',')
+        a = arr[0]
+        b = arr[1]
+        c = arr[2]
+        lbutton.style.cssText = `background: rgb(${a}, ${b}, ${c});`
+    })
+    lbutton.addEventListener('mouseout',()=>{
+        lbutton.style.cssText = 'background: white);'
+    })
 })
 
-onclick = function(){
-    
-}
     
 
 
